@@ -1,0 +1,8 @@
+<div id="articlesList">
+    <ol>
+      <li *ngFor="let comment of comments">
+        ▲{{comment.author.name}} {{ comment.time | timeAgo }} | on: <a href="{{comment.article.url}}">{{comment.article.title}}</a>
+        <br> {{comment.content }} 
+      </li> 
+    </ol>
+  </div>
